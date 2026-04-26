@@ -393,9 +393,10 @@ body.is-scrolled .site-header__inner {
   padding: 0.3rem;
 }
 
-/* Wordmark variant — full Kinawa Energy logo image, free-standing.
-   Renders as white silhouette on the dark transparent header (over hero),
-   and as full-colour brand logo on the scrolled white header. */
+/* Wordmark variant — full Kinawa Energy logo image, free-standing,
+   shown in its native brand colours (green leaf, white bolt, black
+   "Kinawa", orange "Energy") on every header state — matches the
+   official logo as supplied in the documentation. */
 .brand--wordmark {
   display: inline-flex;
   align-items: center;
@@ -409,14 +410,8 @@ body.is-scrolled .site-header__inner {
   background: transparent;
   box-shadow: none;
   object-fit: contain;
-  transition: filter 240ms ease, transform 220ms ease;
-}
-
-/* On the transparent header (over dark hero), render a clean white
-   silhouette so the logo blends naturally with the dark backdrop —
-   no halo, no card, no muddy black wordmark. */
-.site-header--transparent .brand--wordmark .brand__logo {
-  filter: brightness(0) invert(1);
+  filter: none;
+  transition: transform 220ms ease;
 }
 
 .brand--wordmark:hover .brand__logo {

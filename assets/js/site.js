@@ -21,17 +21,32 @@ const navItems = [
 ];
 
 /* ── Path helpers ──────────────────────────────────────────── */
+/* Read the dynamically-set <base href> so the site works whether deployed
+   at a domain root (Netlify) or in a subdirectory (GitHub Pages /Kinawa-Site/). */
+const SITE_BASE = (function () {
+  try {
+    const baseEl = document.querySelector("base");
+    if (baseEl && baseEl.href) {
+      const u = new URL(baseEl.href);
+      let p = u.pathname;
+      if (!p.endsWith("/")) p += "/";
+      return p;
+    }
+  } catch (e) {}
+  return "/";
+})();
+
 function normalizePath(path) {
-  if (!path) return "/";
-  let v = path.replace(/index\.html$/, "");
-  if (!v.startsWith("/")) v = `/${v}`;
+  if (!path) return SITE_BASE;
+  let v = String(path).replace(/index\.html$/, "");
+  if (!v.startsWith("/")) v = SITE_BASE + v.replace(/^\.?\/?/, "");
   return v.endsWith("/") ? v : `${v}/`;
 }
 
 function isCurrentPath(link, current) {
   const l = normalizePath(link);
   const c = normalizePath(current);
-  if (l === "/") return c === "/";
+  if (l === SITE_BASE) return c === SITE_BASE;
   return c === l || c.startsWith(l);
 }
 
@@ -44,12 +59,12 @@ function renderHeader() {
   const isHome  = current === "/";
 
   const navMarkup = [
-    { href: "/",              label: "Home" },
-    { href: "/about/",        label: "About" },
-    { href: "/portfolio/",    label: "Portfolio" },
-    { href: "/courses/",      label: "Training" },
-    { href: "/blog/",         label: "Blog" },
-    { href: "/contact/",      label: "Contact" }
+    { href: "./",              label: "Home" },
+    { href: "about/",          label: "About" },
+    { href: "portfolio/",      label: "Portfolio" },
+    { href: "courses/",        label: "Training" },
+    { href: "blog/",           label: "Blog" },
+    { href: "contact/",        label: "Contact" }
   ].map(item => {
     const active = isCurrentPath(item.href, current) ? ' aria-current="page"' : "";
     return `<a href="${item.href}"${active}><span>${item.label}</span></a>`;
@@ -59,8 +74,8 @@ function renderHeader() {
     <div class="site-header site-header--transparent" id="site-header">
       <div class="wrap">
         <div class="site-header__inner">
-          <a class="brand brand--wordmark" href="/" aria-label="Kinawa Energy — Home">
-            <img class="brand__logo" src="/assets/images/logo.png" alt="Kinawa Energy">
+          <a class="brand brand--wordmark" href="./" aria-label="Kinawa Energy — Home">
+            <img class="brand__logo" src="assets/images/logo.png" alt="Kinawa Energy">
           </a>
 
           <nav class="nav" aria-label="Primary">
@@ -70,9 +85,9 @@ function renderHeader() {
                 <span>Services</span> <i aria-hidden="true">▾</i>
               </button>
               <div class="nav-dropdown__panel">
-                <a href="/deliverables/">Deliverables</a>
-                <a href="/consultation/">Consultation</a>
-                <a href="/toolkit/">Toolkit</a>
+                <a href="deliverables/">Deliverables</a>
+                <a href="consultation/">Consultation</a>
+                <a href="toolkit/">Toolkit</a>
               </div>
             </div>
           </nav>
@@ -83,7 +98,7 @@ function renderHeader() {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M21 21l-4.35-4.35M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4z"/>
               </svg>
             </button>
-            <a class="btn btn--ghost btn--header-cta" href="/contact/">Get in Touch</a>
+            <a class="btn btn--ghost btn--header-cta" href="contact/">Get in Touch</a>
             <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -93,17 +108,17 @@ function renderHeader() {
         </div>
 
         <div class="mobile-nav" data-mobile-nav>
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/portfolio/">Portfolio</a>
-          <a href="/courses/">Training</a>
-          <a href="/blog/">Blog</a>
-          <a href="/contact/">Contact</a>
+          <a href="./">Home</a>
+          <a href="about/">About</a>
+          <a href="portfolio/">Portfolio</a>
+          <a href="courses/">Training</a>
+          <a href="blog/">Blog</a>
+          <a href="contact/">Contact</a>
           <span class="mobile-nav__divider">Services</span>
-          <a href="/deliverables/">Deliverables</a>
-          <a href="/consultation/">Consultation</a>
-          <a href="/toolkit/">Toolkit</a>
-          <a class="btn btn--primary" href="/contact/" style="justify-content:center;margin-top:.5rem">Get a Free Consultation</a>
+          <a href="deliverables/">Deliverables</a>
+          <a href="consultation/">Consultation</a>
+          <a href="toolkit/">Toolkit</a>
+          <a class="btn btn--primary" href="contact/" style="justify-content:center;margin-top:.5rem">Get a Free Consultation</a>
         </div>
       </div>
     </div>
@@ -176,11 +191,11 @@ function renderFooter() {
           <!-- Brand strip -->
           <div class="footer-header">
             <div class="footer-header__brand">
-              <img src="/assets/images/logo.png" alt="Kinawa Energy" loading="lazy" class="footer-logo footer-logo--wordmark">
+              <img src="assets/images/logo.png" alt="Kinawa Energy" loading="lazy" class="footer-logo footer-logo--wordmark">
               <span class="footer-header__tag">Solar Advisory &amp; Delivery &nbsp;·&nbsp; Nairobi, Kenya</span>
             </div>
             <div class="footer-header__cta">
-              <a class="btn btn--primary" href="/contact/">Get a Free Consultation</a>
+              <a class="btn btn--primary" href="contact/">Get a Free Consultation</a>
             </div>
           </div>
 
@@ -197,14 +212,14 @@ function renderFooter() {
             <div class="footer-column">
               <h4>Navigate</h4>
               <div class="footer-links">
-                <a href="/about/">About</a>
-                <a href="/portfolio/">Portfolio</a>
-                <a href="/courses/">Training</a>
-                <a href="/deliverables/">Deliverables</a>
-                <a href="/consultation/">Consultation</a>
-                <a href="/toolkit/">Toolkit</a>
-                <a href="/blog/">Blog</a>
-                <a href="/contact/">Contact</a>
+                <a href="about/">About</a>
+                <a href="portfolio/">Portfolio</a>
+                <a href="courses/">Training</a>
+                <a href="deliverables/">Deliverables</a>
+                <a href="consultation/">Consultation</a>
+                <a href="toolkit/">Toolkit</a>
+                <a href="blog/">Blog</a>
+                <a href="contact/">Contact</a>
               </div>
             </div>
 
