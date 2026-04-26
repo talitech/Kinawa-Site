@@ -1,0 +1,5 @@
+/forum/ /courses/ 301
+/dashboard/ /contact/ 301
+/success/ /contact/ 301
+/products/ /deliverables/ 301
+/products/* /deliverables/ 301

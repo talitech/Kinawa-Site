@@ -1,0 +1,43 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code session state
+.claude/
+
+# Node / Netlify Functions deps (functions are bundled by Netlify on deploy)
+node_modules/
+netlify/functions/node_modules/
+
+# Build artefacts (none yet, but reserve)
+dist/
+build/
+.netlify/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary docx extraction folders
+documentation/_extract_*
+
+# Screenshots dropped at project root (use contact-reference/ if needed)
+/Screenshot*.png
+/Screenshot*.jpg
+
+# Mac archive folder
+__MACOSX/
+*.zip
+*.rar

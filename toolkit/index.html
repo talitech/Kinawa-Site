@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toolkit | Kinawa Energy</title>
+  <meta name="description" content="Mid-funnel tools, calculators, and guides that help visitors estimate costs, evaluate feasibility, and move toward consultation.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260431">
+</head>
+<body>
+  <div class="page-shell">
+    <div data-site-header></div>
+    <main>
+      <section class="page-hero" style="background-image:url('/assets/images/solar-city.jpeg')">
+        <div class="wrap page-hero__inner">
+          <h1 class="page-hero__title">Toolkit</h1>
+          <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="/" aria-label="Home">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7A1 1 0 003 11h1v6a1 1 0 001 1h4v-4h2v4h4a1 1 0 001-1v-6h1a1 1 0 00.707-1.707l-7-7z"/></svg>
+            </a>
+            <span class="page-hero__breadcrumb-sep">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="page-hero__breadcrumb-current">Toolkit</span>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Tools and Guides</span>
+              <h2>Practical decision support before consultation</h2>
+            </div>
+            <p>Use these tools to estimate cost, understand feasibility, and enter the conversation with Kinawa armed with stronger project clarity.</p>
+          </div>
+          <div class="tool-grid">
+
+            <!-- Solar Cost Estimator — calculator UI -->
+            <article class="estimator-card">
+              <header class="estimator-card__head">
+                <div>
+                  <span class="kicker">Live Tool</span>
+                  <h2>Solar Cost Estimator</h2>
+                </div>
+                <span class="estimator-card__status estimator-card__status--live">Ready</span>
+              </header>
+
+              <p class="estimator-card__lead">Use a directional budget estimate to frame the next conversation before engaging Kinawa for technical scoping.</p>
+
+              <!-- visual flow diagram -->
+              <div class="estimator-card__flow" aria-hidden="true">
+                <div class="estimator-card__flow-step">
+                  <div class="estimator-card__flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg></div>
+                  <span>Sun</span>
+                </div>
+                <div class="estimator-card__flow-line"></div>
+                <div class="estimator-card__flow-step">
+                  <div class="estimator-card__flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 10h18M3 14h18M9 6v12M15 6v12"/></svg></div>
+                  <span>Panels</span>
+                </div>
+                <div class="estimator-card__flow-line"></div>
+                <div class="estimator-card__flow-step">
+                  <div class="estimator-card__flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M9 4h6v2H9zM8 12h8M8 16h5"/></svg></div>
+                  <span>Battery</span>
+                </div>
+                <div class="estimator-card__flow-line"></div>
+                <div class="estimator-card__flow-step">
+                  <div class="estimator-card__flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V11l7-4 7 4v10M9 21v-6h6v6"/></svg></div>
+                  <span>Site</span>
+                </div>
+              </div>
+
+              <div class="estimator-card__split">
+                <!-- inputs -->
+                <form class="estimator-card__inputs" data-tool="estimator">
+                  <div class="estimator-card__field">
+                    <label for="monthly-bill">Monthly energy bill (KES)</label>
+                    <input id="monthly-bill" name="monthly_bill" type="number" placeholder="e.g. 120000" min="0">
+                  </div>
+                  <div class="estimator-card__field">
+                    <label for="target-offset">Target bill offset</label>
+                    <select id="target-offset" name="target_offset">
+                      <option value="40">40%</option>
+                      <option value="60">60%</option>
+                      <option value="80" selected>80%</option>
+                      <option value="100">100%</option>
+                    </select>
+                  </div>
+                  <button class="btn btn--primary estimator-card__submit" type="submit">
+                    Generate Estimate <span aria-hidden="true">→</span>
+                  </button>
+                </form>
+
+                <!-- live result tiles -->
+                <div class="estimator-card__results" data-tool-results>
+                  <span class="estimator-card__results-label">Indicative result</span>
+                  <div class="estimator-card__tiles">
+                    <div class="estimator-card__tile">
+                      <span class="estimator-card__tile-label">System size</span>
+                      <strong class="estimator-card__tile-value">— kW</strong>
+                    </div>
+                    <div class="estimator-card__tile">
+                      <span class="estimator-card__tile-label">Budget range</span>
+                      <strong class="estimator-card__tile-value">KES —</strong>
+                    </div>
+                    <div class="estimator-card__tile">
+                      <span class="estimator-card__tile-label">Payback</span>
+                      <strong class="estimator-card__tile-value">— yrs</strong>
+                    </div>
+                  </div>
+                  <p class="estimator-card__disclaimer">Directional only. Actual sizing depends on site assessment, load profile, and tariff structure.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Qualification Pipeline — vertical pipeline -->
+            <article class="pipeline-card">
+              <header class="pipeline-card__head">
+                <div>
+                  <span class="kicker">Planned Tools</span>
+                  <h2>Qualification Pipeline</h2>
+                </div>
+                <span class="pipeline-card__status">Roadmap</span>
+              </header>
+
+              <ol class="pipeline-list">
+                <li class="pipeline-node" data-status="roadmap">
+                  <div class="pipeline-node__dot" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6M22 12h-6M2 12h6"/><circle cx="12" cy="12" r="3"/></svg>
+                  </div>
+                  <div class="pipeline-node__body">
+                    <strong>ROI Calculator</strong>
+                    <p>Understand savings assumptions and payback logic before requesting a quote.</p>
+                    <span class="pipeline-node__status">Roadmap</span>
+                  </div>
+                </li>
+                <li class="pipeline-node" data-status="roadmap">
+                  <div class="pipeline-node__dot" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+                  </div>
+                  <div class="pipeline-node__body">
+                    <strong>Solar Readiness Assessment</strong>
+                    <p>Check demand profile, site constraints, and implementation readiness.</p>
+                    <span class="pipeline-node__status">Roadmap</span>
+                  </div>
+                </li>
+                <li class="pipeline-node" data-status="roadmap">
+                  <div class="pipeline-node__dot" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l4-7 4 11 4-9 4 5h2"/></svg>
+                  </div>
+                  <div class="pipeline-node__body">
+                    <strong>Load Profiling Helper</strong>
+                    <p>Prepare structured energy data before feasibility or audit engagement.</p>
+                    <span class="pipeline-node__status">Roadmap</span>
+                  </div>
+                </li>
+                <li class="pipeline-node" data-status="roadmap">
+                  <div class="pipeline-node__dot" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V21h16"/></svg>
+                  </div>
+                  <div class="pipeline-node__body">
+                    <strong>Guide Library</strong>
+                    <p>Route users into deliverables, portfolio proof, training, or consultation based on need.</p>
+                    <span class="pipeline-node__status">Roadmap</span>
+                  </div>
+                </li>
+              </ol>
+
+              <div class="pipeline-card__outcome">Each tool is intended to trigger a CTA to speak with Kinawa after results.</div>
+              <a class="pipeline-card__notify" href="/contact/?type=consultation">Notify me when these launch →</a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--navy">
+        <div class="wrap">
+          <div class="cta-band reveal">
+            <span class="eyebrow">Next Step</span>
+            <h2>Need a professional assessment now?</h2>
+            <p>The toolkit gives you directional clarity. For an engineered recommendation grounded in your actual site, load data, and project stage — engage Kinawa directly.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="/contact/">Schedule a Consultation</a>
+              <a class="btn btn--ghost" href="/quote/">Request a Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-site-footer></div>
+  </div>
+  <script src="/assets/js/site.js?v=20260431"></script>
+</body>
+</html>

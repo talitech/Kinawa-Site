@@ -1,0 +1,380 @@
+PORTFOLIO PROJECTS — WEBSITE READY VERSION
+1. Promenade Mall Solar PV System
+Category: Grid-TieLocation: Nyali, MombasaSystem Size: 400kW Phase 1Client Type: Commercial retail complex
+Problem
+The mall had extremely high daytime electricity demand and rising grid electricity costs affecting operating margins.
+Solution
+Designed and managed implementation of a 400kW two-phase grid-tie solar PV system to offset daytime consumption using rooftop solar generation.
+Responsibilities included:
+System design (With PVSyt, Helioscope and AutoCAD)
+BOQ (Bill of Quantities) and BOM (Bill of Material) creation
+Procurement support
+Client Management
+Technical coordination
+Installation Supervision
+Commissioning oversight
+Outcome
+The system significantly reduced reliance on utility power during peak daytime usage and improved long-term operational energy cost stability.
+Performance Metrics
+400kW Phase 1 installed capacityLarge commercial grid-tie deploymentOne of the largest rooftop commercial systems in coastal Kenya at the time
+2. Petrocity Petrol Stations Solar Programme
+Category: Grid-TieLocation: Multiple sites across KenyaSystem Size: 10kW – 100kW per siteClient Type: Commercial fuel retail chain
+Problem
+Fuel stations operate long hours and depend heavily on grid electricity for lighting, pumps, refrigeration, and security systems.
+Solution
+Led installation and maintenance of six grid-tie PV systems across Petrocity stations to reduce electricity operating costs and improve energy resilience.
+Outcome
+Reduced grid dependency across multiple stations and improved operational sustainability of fuel retail infrastructure.
+Performance Metrics
+6 sites installedSystems ranging between 10kW–100kWMulti- site rollout coordination experience
+3.  Bakeries (Mombasa) Ltd  Industrial Solar Installations
+Category: Grid-TieLocation: Multiple industrial bakery facilitiesSystem Size: 40kW – 100kW per siteClient Type: Industrial manufacturing
+Problem
+Industrial baking operations require continuous daytime energy supply with high electricity consumption loads.
+Solution
+Installed and maintained 10 grid-tie PV systems across Supa Loaf facilities to offset production electricity costs.
+Outcome
+Improved daytime solar energy contribution to industrial production processes and reduced electricity expenditure.
+Performance Metrics
+10 installations completed40kW–100kW system rangeIndustrial solar deployment experience
+4. OL Pejeta Conservancy Solar Hybrid Systems
+Category: Hybrid / Specialized Off-Grid ProjectsLocation: Laikipia CountySystem Size:39.83kWp PV + 120kWh BESS 64.74kWp PV + 260kWh BESS23.24kWp PV + 60kWh BESS
+Client Type: Conservation infrastructure / research operations
+Problem
+Remote conservation monitoring and operations required reliable off-grid energy with battery storage for continuous uptime.
+Solution
+Designed and supported installation of three hybrid solar mini-grid systems with large-scale battery storage powering remote conservation infrastructure.
+Also completed:
+weather station configurationscheduled and unscheduled O&M support
+Outcome
+Delivered reliable renewable power infrastructure supporting conservation monitoring and research continuity in remote locations.
+Performance Metrics
+3 hybrid energy sitesOver 127kWp combined solar capacity440kWh+ battery storage deployed
+5. Solio Ranch Security Mast Solarization Programme
+Category: Off-Grid / Specialized ProjectsLocation: Solio RanchSystem Size: Multiple mast sites + HQ systemClient Type: Conservation security infrastructure
+Problem
+Wildlife security monitoring systems required reliable decentralized energy sources in remote areas without grid connectivity.
+Solution
+Installed off-grid solar systems powering 13 security mast monitoring stations and headquarters infrastructure.
+Provided:
+installationcommissioningO&M support
+Outcome
+Enabled continuous operation of wildlife security monitoring systems across a distributed conservation site network.
+Performance Metrics
+13 mast monitoring systems poweredRemote infrastructure deploymentLong-distance system reliability design
+6. Mercy Corps Samburu BESS Upgrade & Troubleshooting
+Category: Specialized Projects / O&MLocation: SamburuSystem Size: Multi-site system upgrade
+Client Type: NGO infrastructure
+Problem
+Existing solar battery storage systems experienced performance challenges affecting reliability.
+Solution
+Performed:
+system diagnosticsbattery replacementsystem configuration troubleshootingperformance optimization
+across three Mercy Corps office installations
+Outcome
+Restored system reliability and improved operational energy availability across multiple humanitarian field sites.
+Performance Metrics
+3 systems restoredBattery replacement completedRemote technical troubleshooting delivery
+7. Maasai Mara Ranger Stations Solar Electrification
+Category: Off-GridLocation: Maasai MaraSystem Size: 7 ranger stations
+Client Type: Conservation operations
+Problem
+Ranger stations required reliable off-grid electricity to support field operations and security activities.
+Solution
+Installed standalone solar PV systems powering ranger facilities across multiple remote conservation locations.
+Outcome
+Improved operational effectiveness and safety of conservation personnel through reliable electricity access.
+Performance Metrics
+7 ranger stations electrifiedRemote deployment logistics coordination
+8. Wajir Girls Secondary School Solar Electrification
+Category: Off-GridLocation: Wajir CountySystem Size: 10kW
+Client Type: Educational institution
+Problem
+The school lacked reliable electricity for lighting and academic activities.
+Solution
+Designed and implemented a 10kW off-grid solar PV system supporting school electrification.
+Outcome
+Improved access to electricity for students and enabled extended study hours and improved educational conditions.
+Performance Metrics
+10kW off-grid installationInstitutional solar electrification experience
+GRID-TIE PROJECTS
+Fisheries Mombasa Solar PV System
+Category: Grid-TieLocation: MombasaSystem Size: 50kWClient Type: Government / Fisheries processing facility
+Problem
+The facility had high electricity consumption during daytime operations affecting operational costs.
+Solution
+Installed and supported commissioning of a 50kW rooftop grid-tie solar PV system to offset daytime electricity consumption.
+Outcome
+Reduced dependence on utility electricity and improved long-term operational cost efficiency.
+Performance Metrics
+50kW installedCommercial institutional solar deploymentGovernment infrastructure experience
+Multi-Site Commercial Grid-Tie Commissioning Programme
+Category: Grid-TieLocation: Multiple sites across KenyaSystem Size: 5kW – 30kW
+Client Type: Residential and SME commercial clients
+Problem
+Clients required proper commissioning and inverter configuration to ensure optimal system performance after installation.
+Solution
+Commissioned multiple solar PV systems using:
+Huawei grid-tie inverters
+Deye hybrid inverters (single & three-phase)
+Victron off-grid systems
+Growatt hybrid systems
+Outcome
+Improved system performance reliability and ensured compliance with technical standards.
+Performance Metrics
+Multiple commissioning assignments completedMulti -platform inverter expertiseResidential + SME deployment experience
+OFF-GRID PROJECTS
+GivePower School Electrification Programme
+Category: Off-GridLocations
+Mbegani (Kwale)
+Bamba (Kilifi)
+Lositeti (Kajiado)
+System Size
+3.6kW – 5kW per site
+Client Type: Educational institutions
+Problem
+Rural schools lacked reliable electricity for learning activities and digital access.
+Solution
+Installed standalone solar PV systems supporting lighting and essential school electrical loads.
+Outcome
+Improved learning environments and enabled extended study hours in underserved regions.
+Performance Metrics
+3 schools electrifiedRural deployment logisticsEducation sector electrification experience
+Garissa Mosque Backup Solar System
+Category: Off-Grid BackupLocation: GarissaSystem Size: 5kW
+Client Type: Religious institution
+Problem
+Frequent outages disrupted lighting and facility operations.
+Solution
+Installed a 5kW solar backup system supporting uninterrupted power supply.
+Outcome
+Improved reliability of electricity during outages and ensured continuity of community activities.
+Performance Metrics
+5kW installedCommunity infrastructure support deployment
+Kajiado Private Residence Off-Grid System
+Category: Off-GridLocation: KajiadoSystem Size: 5kW PV + 10kWh BESS
+Client Type: Residential
+Problem
+The home required reliable electricity in an area with unreliable grid access.
+Solution
+Designed and installed an autonomous off-grid solar PV system with battery storage.
+Outcome
+Delivered energy independence and reliable household electricity supply.
+Performance Metrics
+5kW PV10kWh battery storageStandalone residential system deployment
+PAYGo Rural Electrification Programme
+Category: Off-Grid / Distributed Energy AccessLocation
+Kwale
+Kilifi
+Mombasa rural zones
+System Size: 100Wp – 500Wp
+Client Type: Rural households
+Problem
+Low-income households lacked access to affordable electricity solutions.
+Solution
+Supported rollout of small-scale PAYGo solar home systems and solar water pumping systems across multiple rural communities.
+Outcome
+Enabled decentralized energy access and improved household productivity and living conditions.
+Performance Metrics
+Multi-county rolloutPAYGo deployment experienceLast-mile electrification exposure
+Ukunda Residential Off-Grid System (Design Stage)
+Category: Off-Grid DesignLocation: Ukunda, KwaleSystem Size: 24kW
+Client Type: Residential estate-scale installation
+Problem
+Client required a fully independent high-capacity residential energy solution.
+Solution
+Designed a 24kW off-grid solar PV system with storage architecture tailored for high-load residential usage.
+Outcome
+Delivered technical design supporting future installation implementation.
+Performance Metrics
+24kW off-grid designLarge residential system engineering experience
+HYBRID SYSTEM PROJECTS
+UNHCR Nairobi Energy Infrastructure Upgrade
+Category: Hybrid Support InfrastructureLocation: NairobiScope: Installation of 7 AC units
+Client Type: International humanitarian organization
+Problem
+Office infrastructure required improved thermal comfort and electrical load optimization.
+Solution
+Installed 7 air-conditioning systems integrated within existing energy infrastructure support environment.
+Outcome
+Improved operational comfort and productivity of office facilities.
+Performance Metrics
+International NGO infrastructure support experience
+Residential & Airbnb Hybrid Solar Programme
+Category: Hybrid SystemsLocation
+Watamu  House
+Airbnb Diani
+Additional residential sites
+System Size: 5kW – 30kW
+Client Type: Residential & hospitality
+Problem
+Hospitality facilities required reliable power with reduced generator dependence and lower electricity costs.
+Solution
+Installed and maintained multiple hybrid solar PV systems combining grid + battery backup solutions.
+Outcome
+Improved reliability of electricity supply and reduced operating energy costs.
+Performance Metrics
+10 hybrid systems deployedHospitality energy optimization experience
+Mobile Digital Schools Container Hybrid Systems
+Category: Hybrid SystemsLocation: Multiple sites
+System Size: 5kW – 10kW
+Client Type: Education infrastructure
+Problem
+Mobile digital learning environments required portable reliable electricity supply.
+Solution
+Installed hybrid solar systems using gel and lithium battery storage supporting containerized classrooms.
+Outcome
+Enabled off-grid digital learning environments in remote regions.
+Performance Metrics
+Portable education infrastructure electrificationHybrid storage deployment experience
+Sanana Hotel Hybrid Solar PV System
+Category: HybridLocation: MombasaSystem Size: 24kW PV + 20kWh BESS
+Client Type: Hospitality
+Problem
+The hotel had high electricity bills due to heavy daytime cooling loads and night backup requirements.
+Solution
+Installed a hybrid solar PV system integrating battery storage to offset grid consumption and improve reliability.
+Outcome
+Reduced monthly electricity bills from:
+KSh 200,000 → KSh 45,000
+Performance Metrics
+24kW PV installed20kWh battery storage77% electricity cost reduction achieved
+(This is a very strong marketing case study — highlight it on homepage later.)
+SOLAR WATER PUMPING PROJECTS
+Ngara Apartment Borehole Solarization
+Category: Solar Water PumpingLocation: Ngara, NairobiSystem Size
+3kW borehole pumping5kW common area lighting system
+Client Type: Residential apartments
+Problem
+High electricity costs associated with borehole pumping and shared facility lighting.
+Solution
+Installed solar-powered borehole pumping and lighting systems.
+Outcome
+Reduced electricity expenses and improved sustainability of shared utilities.
+Performance Metrics
+Dual-system installationUrban borehole solarization deployment
+Nairobi Borehole Solar Pumping System
+Category: Solar Water PumpingLocation: NairobiSystem Size: 7.5kW
+Client Type: Commercial / institutional
+Problem
+Grid-powered borehole pumping increased operational costs.
+Solution
+Installed solar PV powered pumping infrastructure.
+Outcome
+Reduced pumping electricity costs and improved water access sustainability.
+Performance Metrics
+7.5kW pumping system deployed
+Airstrip Borehole Solarization
+Category: Solar Water PumpingLocation: OloitoktokSystem Size: 15kW
+Client Type: Aviation support infrastructure
+Problem
+Remote airstrip water infrastructure required reliable pumping without grid reliance.
+Solution
+Installed solar borehole pumping system supporting airstrip operations.
+Outcome
+Improved reliability of remote aviation support water systems.
+Performance Metrics
+15kW solar pumping deploymentCritical infrastructure support project
+River Tana Floating Solar Farm Pumping System
+Category: Specialized Solar Water PumpingLocation: River Tana (Garissa region)
+Client Type: Agricultural irrigation
+Problem
+Farm irrigation required reliable pumping despite fluctuating river conditions.
+Solution
+Installed floating solar pumping infrastructure supporting irrigation operations.
+Outcome
+Improved agricultural productivity through renewable-powered irrigation.
+Performance Metrics
+Floating solar deployment experienceAgricultural irrigation infrastructure support
+Kiwanja Borehole Solarization — World Vision Kenya
+Category: Solar Water PumpingLocation: KiwanjaSystem Size: 7.5kW
+Client Type: NGO water infrastructure
+Problem
+Community borehole pumping required sustainable off-grid energy supply.
+Solution
+Installed solar-powered borehole pumping system supporting community water access.
+Outcome
+Improved water availability reliability for local communities.
+Performance Metrics
+NGO rural water infrastructure delivery experience
+ENERGY & ELECTRICAL AUDITS
+Mini Bakeries Energy & Electrical Audit Programme
+Category: Energy Audit / Electrical AuditLocation: Nationwide (Kenya)Sites: 44 facilities
+Client Type: Industrial food production chain
+Problem
+The client required compliance-level energy audits and optimization recommendations across multiple bakery facilities.
+Solution
+Conducted:
+energy auditselectrical auditstechnical documentationregulatory submission to Energy and Petroleum Regulatory Authority
+across 44 bakery sites nationwide.
+Outcome
+Delivered structured compliance documentation supporting regulatory submission and energy optimization planning.
+Performance Metrics
+44 sites auditedNationwide rolloutRegulatory compliance audit delivery experience
+(This is major consulting credibility for Kinawa.)
+FEASIBILITY STUDY PROJECT
+Kenya Pipeline Company Solarization Feasibility Study
+Category: Feasibility StudyLocation: KenyaSites: 8 pipeline stations
+Client Type: National energy infrastructure operator
+Problem
+The client required assessment of technical and financial viability of solar integration across pipeline stations.
+Solution
+Conducted solarization feasibility assessment covering:
+technical sizingsite suitabilityeconomic viabilityimplementation recommendations
+across 8 pipeline stations.
+Outcome
+Delivered decision-support framework enabling strategic renewable integration planning.
+Performance Metrics
+8 national infrastructure sites assessedStrategic energy transition consulting experience
+Multi-Site Energy & Electrical Audit Programme – National Bakery Manufacturing Network (44 Facilities)
+Location: Nationwide (Kenya)Project Type: Multi-Site Energy Audit + Electrical Safety & Compliance AuditClient Type: Industrial Manufacturing NetworkFacilities Covered: 44 production branchesCompliance Framework: EPRA Energy Management Regulations (2012) & Energy Act (2019)
+Problem
+The client operates a nationwide production network with continuous manufacturing operations, resulting in:
+high electricity consumption costs
+inconsistent power quality across facilities
+aging electrical infrastructure in selected branches
+electrical safety compliance risks
+absence of structured benchmarking across sites
+need to meet mandatory EPRA regulatory audit compliance requirements
+The organization required a coordinated national programme to evaluate both energy performance and electrical system condition, while supporting submission readiness for EPRA compliance obligations.
+Solution
+Kinawa-supported engineering team implemented a structured multi-site Energy and Electrical Audit Programme covering 44 facilities, aligned with EPRA regulatory requirements and industry best practice methodologies.
+Energy Audit Scope
+Included:
+facility-wide consumption analysis
+production equipment load profiling
+lighting system efficiency evaluation
+generator performance review
+tariff optimization assessment
+Energy Conservation Measures (ECMs)
+branch-level benchmarking
+site energy baseline development
+Electrical Audit Scope
+Included:
+switchgear condition inspections
+distribution board loading verification
+earthing system integrity assessment
+protection coordination checks
+cable adequacy evaluation
+electrical safety compliance review
+power quality measurements
+identification of operational risks
+Programme execution also involved:
+✔ onsite inspections✔ thermographic assessments✔ billing analysis✔ load measurement campaigns✔ equipment inventory documentation✔ EPRA-aligned reporting preparation
+Outcome
+The programme delivered a national energy and electrical infrastructure performance framework across all facilities and supported the client’s compliance with EPRA energy management regulations.
+Strategic Results Delivered
+Established:
+branch-level energy baselines
+cross-site benchmarking matrix
+prioritized upgrade roadmap
+electrical safety risk register
+compliance improvement strategy aligned with EPRA requirements
+investment-grade efficiency recommendations
+Impact for the Client
+The audit programme enabled the organization to:
+✔ meet EPRA energy audit compliance requirements✔ identify major energy cost drivers across production sites✔ standardize electrical safety assessments nationally✔ prioritize high-return efficiency upgrades✔ reduce operational risk exposure✔ implement structured long-term energy management planning
+Top of Form
+Bottom of Form
+Mains Power Trend Analysis from the data logger data;
+Thermographic image to revealed the heat loss from the oven
