@@ -7237,3 +7237,89 @@ body.is-scrolled .site-header .nav > a:hover,
   outline-offset: 3px;
 }
 
+/* ════════════════════════════════════════════════════════════
+   Doc-alignment additions (April 2026)
+   ════════════════════════════════════════════════════════════ */
+
+/* Portfolio: category overview cards above the filter chips */
+.cat-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.cat-overview__item {
+  background: var(--off-white);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+.cat-overview__item strong {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.35rem;
+}
+.cat-overview__item p {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--body);
+  margin: 0;
+}
+@media (max-width: 1024px) { .cat-overview { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px)  { .cat-overview { grid-template-columns: 1fr; } }
+
+/* Featured Projects (home) — lead paragraph below the headline */
+.pf-section__lead {
+  font-size: 0.95rem;
+  color: var(--body);
+  line-height: 1.7;
+  max-width: 38rem;
+  margin: 0.75rem 0 0;
+}
+
+/* Home hero — call line below the CTAs */
+.hero__content .hero__call {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--body);
+  letter-spacing: 0.02em;
+}
+.hero__content .hero__call a {
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+.hero__content .hero__call a:hover {
+  color: var(--dark);
+  border-bottom-color: var(--lime);
+}
+
+/* Hero CTAs row — two pill buttons side-by-side */
+.hero__content .hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* Blog: empty state when filter has no matches */
+.blog-empty {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.03);
+  border-radius: 14px;
+  color: var(--body);
+}
+
+/* Project completion-date meta cell — slight visual lift so it reads as new */
+.project-card__meta [data-completion] strong {
+  color: var(--teal);
+}
+

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/site.css?v=20260432">
+  <link rel="stylesheet" href="assets/css/site.css?v=20260433">
 </head>
 <body>
   <div class="page-shell">
@@ -83,17 +83,27 @@
           <div class="section-head">
             <div>
               <span class="eyebrow">All Articles</span>
-              <h2>Tips, case studies, technical guidance, and market insight</h2>
+              <h2>Tips, case studies, technical guidance, and news</h2>
             </div>
-            <p>Targeting solar cost, ROI, feasibility, training, and project advisory decisions in Kenya and East Africa.</p>
+            <p>Filter by category — Tips for short practical advice, Case Studies for real project outcomes, Technical for engineering depth, and News for industry developments.</p>
           </div>
+
+          <!-- Doc-aligned 4 categories: Tips / Case Studies / Technical / News -->
+          <div class="filters filters--chips" data-blog-filters>
+            <button type="button" class="is-active" data-blog-filter="all">All Articles</button>
+            <button type="button" data-blog-filter="tips">Tips</button>
+            <button type="button" data-blog-filter="case-studies">Case Studies</button>
+            <button type="button" data-blog-filter="technical">Technical</button>
+            <button type="button" data-blog-filter="news">News</button>
+          </div>
+
           <div class="article-grid">
-              <article class="article-card">
+              <article class="article-card" data-blog-card data-blog-cat="technical">
                 <img src="assets/images/solar-installation.webp" alt="Solar system sizing guide">
                 <div class="project-card__body">
                   <div class="tag-row">
+                    <span class="tag">Technical</span>
                     <span class="tag">Sizing</span>
-                    <span class="tag">Feasibility</span>
                   </div>
                   <h3>Solar System Sizing Guide</h3>
                   <p>Move from load profile to a viable project brief that is technically and commercially defensible.</p>
@@ -101,12 +111,12 @@
                 </div>
               </article>
 
-              <article class="article-card">
+              <article class="article-card" data-blog-card data-blog-cat="case-studies">
                 <img src="assets/images/solar-city.jpeg" alt="Solar storage strategy">
                 <div class="project-card__body">
                   <div class="tag-row">
+                    <span class="tag">Case Studies</span>
                     <span class="tag">Storage</span>
-                    <span class="tag">Decision Support</span>
                   </div>
                   <h3>Solar Storage Strategy</h3>
                   <p>Understand where batteries create resilience and where they simply increase capital cost.</p>
@@ -114,18 +124,22 @@
                 </div>
               </article>
 
-              <article class="article-card">
+              <article class="article-card" data-blog-card data-blog-cat="tips">
                 <img src="assets/images/solar-farm.jpeg" alt="Benefits of solar energy">
                 <div class="project-card__body">
                   <div class="tag-row">
+                    <span class="tag">Tips</span>
                     <span class="tag">ROI</span>
-                    <span class="tag">Commercial</span>
                   </div>
                   <h3>Benefits of Solar Energy</h3>
                   <p>A market-facing explanation of why solar matters for cost control, reliability, and strategic planning.</p>
                   <a class="button-link link-accent" href="blog/benefits-of-solar-energy/">Read article</a>
                 </div>
               </article>
+          </div>
+
+          <div class="blog-empty" data-blog-empty hidden>
+            <p>No articles in this category yet — more coming soon.</p>
           </div>
         </div>
       </section>
@@ -147,6 +161,34 @@
     </main>
     <div data-site-footer></div>
   </div>
-  <script src="assets/js/site.js?v=20260432"></script>
+  <script src="assets/js/site.js?v=20260433"></script>
+  <script defer>
+    /* Blog category filtering */
+    (function () {
+      function init() {
+        const buttons = document.querySelectorAll('[data-blog-filter]');
+        const cards   = document.querySelectorAll('[data-blog-card]');
+        const empty   = document.querySelector('[data-blog-empty]');
+        if (!buttons.length || !cards.length) return;
+
+        function applyFilter(filter) {
+          let visible = 0;
+          cards.forEach(c => {
+            const match = filter === 'all' || c.dataset.blogCat === filter;
+            c.style.display = match ? '' : 'none';
+            if (match) visible++;
+          });
+          if (empty) empty.hidden = visible > 0;
+        }
+
+        buttons.forEach(btn => btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.toggle('is-active', b === btn));
+          applyFilter(btn.dataset.blogFilter);
+        }));
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
 </body>
 </html>

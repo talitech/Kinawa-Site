@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/site.css?v=20260432">
+  <link rel="stylesheet" href="assets/css/site.css?v=20260433">
 </head>
 <body>
   <div class="page-shell">
@@ -99,7 +99,27 @@
               <span class="eyebrow">Browse Projects</span>
               <h2>Real work. Real outcomes. Real Kenya.</h2>
             </div>
-            <p>Filter by system type or scroll the full portfolio. Every card includes location, system size, client type, and a structured challenge/solution/outcome summary.</p>
+            <p>Our portfolio spans grid-tie, off-grid, hybrid, water pumping, audit, feasibility, and O&amp;M work. Every card includes location, system size, client type, completion date, and a structured challenge/solution/outcome summary.</p>
+          </div>
+
+          <!-- Project category overview (per Kinawa Website Profile) -->
+          <div class="cat-overview">
+            <article class="cat-overview__item">
+              <strong>Grid-Tie Systems</strong>
+              <p>Designed to reduce electricity costs while maintaining grid connectivity for reliability — commercial, retail, and industrial.</p>
+            </article>
+            <article class="cat-overview__item">
+              <strong>Off-Grid Systems</strong>
+              <p>Standalone systems delivering reliable power in areas without grid access — schools, conservation, and rural communities.</p>
+            </article>
+            <article class="cat-overview__item">
+              <strong>Hybrid Systems</strong>
+              <p>Integrated solar + battery storage + backup combinations for flexibility and resilience across hotels, homes, and conservation sites.</p>
+            </article>
+            <article class="cat-overview__item">
+              <strong>Specialised Work</strong>
+              <p>Solar water pumping, system design engineering, technical and financial feasibility studies, and EPRA-aligned energy audits.</p>
+            </article>
           </div>
 
           <div class="filters filters--chips" data-project-filters>
@@ -751,7 +771,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-  <script src="assets/js/site.js?v=20260432" defer></script>
+  <script src="assets/js/site.js?v=20260433" defer></script>
   <script defer>
     /* Portfolio enhancements: filter counts, floating size badge, expandable story */
     (function () {
@@ -777,6 +797,17 @@
             badge.className = 'project-card__size-badge';
             badge.textContent = sizePill.textContent.trim();
             card.appendChild(badge);
+          }
+
+          // Inject "Completion Date" into project-card__meta if not present.
+          // Reads optional data-year on the card; falls back to a default range.
+          const meta = card.querySelector('.project-card__meta');
+          if (meta && !meta.querySelector('[data-completion]')) {
+            const year = card.dataset.year || '2022 – 2024';
+            const yearDiv = document.createElement('div');
+            yearDiv.setAttribute('data-completion', '');
+            yearDiv.innerHTML = '<strong>Completed</strong>' + year;
+            meta.appendChild(yearDiv);
           }
 
           const story = card.querySelector('.project-story');
