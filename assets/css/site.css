@@ -639,7 +639,7 @@ body.is-scrolled .site-header .nav > a:hover,
   padding: clamp(7rem, 12vw, 10rem) 0 calc(clamp(4rem, 7vw, 6rem) + 90px);
   background-image:
     linear-gradient(180deg, rgba(14,47,62,0.90) 0%, rgba(14,47,62,0.68) 50%, rgba(14,47,62,0.45) 100%),
-    url("/assets/images/solar-farm.jpeg");
+    url("../images/solar-farm.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1283,7 +1283,7 @@ body.is-scrolled .site-header .nav > a:hover,
   position: relative;
   background-image:
     linear-gradient(to right, rgba(14,47,62,0.92) 0%, rgba(14,47,62,0.75) 100%),
-    url("/assets/images/solar-city.jpeg");
+    url("../images/solar-city.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -1294,7 +1294,7 @@ body.is-scrolled .site-header .nav > a:hover,
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 820px;   /* expanded FAQ height — section never shrinks below this */
   overflow: hidden;
-  background: url("/assets/images/solar-city.jpeg") center / cover no-repeat;
+  background: url("../images/solar-city.jpeg") center / cover no-repeat;
 }
 
 .split-bg__image {
@@ -4120,9 +4120,12 @@ body.is-scrolled .site-header .nav > a:hover,
   transition: box-shadow 300ms ease;
 }
 
-.svc-card:nth-child(1) { top: 5rem;   z-index: 10; background: #072333; }
-.svc-card:nth-child(2) { top: 7.5rem; z-index: 20; background: var(--lime); }
-.svc-card:nth-child(3) { top: 10rem;  z-index: 30; background: var(--white); }
+.svc-card:nth-child(1) { top: 5rem;    z-index: 10; background: #072333; }
+.svc-card:nth-child(2) { top: 7.5rem;  z-index: 20; background: var(--lime); }
+.svc-card:nth-child(3) { top: 10rem;   z-index: 30; background: var(--white); }
+.svc-card:nth-child(4) { top: 12.5rem; z-index: 40; background: #072333; }
+.svc-card:nth-child(5) { top: 15rem;   z-index: 50; background: var(--lime); }
+.svc-card:nth-child(6) { top: 17.5rem; z-index: 60; background: var(--white); }
 
 .svc-card__body {
   padding: clamp(2.5rem, 4.5vw, 4.5rem);
@@ -4141,9 +4144,12 @@ body.is-scrolled .site-header .nav > a:hover,
   margin-bottom: 0.25rem;
 }
 
-.svc-card:nth-child(1) .svc-card__num { color: rgba(255,255,255,0.38); }
-.svc-card:nth-child(2) .svc-card__num { color: rgba(0,0,0,0.42); }
-.svc-card:nth-child(3) .svc-card__num { color: var(--muted); }
+.svc-card:nth-child(1) .svc-card__num,
+.svc-card:nth-child(4) .svc-card__num { color: rgba(255,255,255,0.38); }
+.svc-card:nth-child(2) .svc-card__num,
+.svc-card:nth-child(5) .svc-card__num { color: rgba(0,0,0,0.42); }
+.svc-card:nth-child(3) .svc-card__num,
+.svc-card:nth-child(6) .svc-card__num { color: var(--muted); }
 
 .svc-card .svc-card__body h3 {
   font-size: clamp(1.5rem, 2.8vw, 2.4rem);
@@ -4152,9 +4158,12 @@ body.is-scrolled .site-header .nav > a:hover,
   margin: 0;
 }
 
-.svc-card:nth-child(1) .svc-card__body h3 { color: var(--white); }
-.svc-card:nth-child(2) .svc-card__body h3 { color: var(--dark); }
-.svc-card:nth-child(3) .svc-card__body h3 { color: var(--dark); }
+.svc-card:nth-child(1) .svc-card__body h3,
+.svc-card:nth-child(4) .svc-card__body h3 { color: var(--white); }
+.svc-card:nth-child(2) .svc-card__body h3,
+.svc-card:nth-child(3) .svc-card__body h3,
+.svc-card:nth-child(5) .svc-card__body h3,
+.svc-card:nth-child(6) .svc-card__body h3 { color: var(--dark); }
 
 .svc-card .svc-card__body p {
   font-size: 1rem;
@@ -4163,9 +4172,19 @@ body.is-scrolled .site-header .nav > a:hover,
   max-width: 44ch;
 }
 
-.svc-card:nth-child(1) .svc-card__body p { color: rgba(255,255,255,0.62); }
-.svc-card:nth-child(2) .svc-card__body p { color: rgba(0,0,0,0.65); }
-.svc-card:nth-child(3) .svc-card__body p { color: var(--body); }
+.svc-card:nth-child(1) .svc-card__body p,
+.svc-card:nth-child(4) .svc-card__body p { color: rgba(255,255,255,0.62); }
+.svc-card:nth-child(2) .svc-card__body p,
+.svc-card:nth-child(5) .svc-card__body p { color: rgba(0,0,0,0.65); }
+.svc-card:nth-child(3) .svc-card__body p,
+.svc-card:nth-child(6) .svc-card__body p { color: var(--body); }
+
+.svc-card:nth-child(4) .btn--secondary { align-self: flex-start; background: transparent; border-color: rgba(255,255,255,0.5); color: var(--white); }
+.svc-card:nth-child(4) .btn--secondary:hover { background: var(--white); border-color: var(--white); color: var(--dark); }
+.svc-card:nth-child(5) .btn--secondary { align-self: flex-start; background: transparent; border-color: rgba(0,0,0,0.35); color: var(--dark); }
+.svc-card:nth-child(5) .btn--secondary:hover { background: var(--dark); border-color: var(--dark); color: var(--lime); }
+.svc-card:nth-child(6) .btn--secondary { align-self: flex-start; background: transparent; border-color: rgba(0,0,0,0.25); color: var(--dark); }
+.svc-card:nth-child(6) .btn--secondary:hover { background: var(--dark); border-color: var(--dark); color: var(--white); }
 
 .svc-card:nth-child(1) .btn--secondary {
   align-self: flex-start;
@@ -5579,6 +5598,7 @@ body.is-scrolled .site-header .nav > a:hover,
 .filters--chips button:hover {
   border-color: var(--lime);
   background: rgba(174, 249, 119, 0.08);
+  color: var(--dark);
 }
 
 .filters--chips button.is-active {
